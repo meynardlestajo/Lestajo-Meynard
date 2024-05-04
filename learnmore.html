@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mission and Vision</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  
+  <!-- JavaScript redirect script -->
+  <script>
+    // Redirect function
+    function redirectToPage(page) {
+      window.location.href = page; // Redirects to the specified page
+    }
+
+    // Function to redirect to learnmore.html
+    function redirectToLearnMore() {
+      redirectToPage('learnmore.html');
+    }
+  </script>
+</head>
+<body style="background-color: red; color: white;">
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+  <div class="container">
+    <a class="navbar-brand" href="#">University of Eastern Pangasinan</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="#" onclick="redirectToPage('index.html')">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#" onclick="redirectToPage('about.html')">About</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#" onclick="redirectToPage('courses.html')">Courses</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#" onclick="redirectToPage('contact.html')">Contact</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<div class="container mt-5">
+  <div class="jumbotron" style="background-color: red; color: white;">
+    <h1 class="display-4">MISSION</h1>
+    <p class="lead">University of Eastern Pangasinan exist to develop highly competent professionals and morally responsible individuals through innovations and industry-oriented instruction, strong relevant research, responsive extension programs, value-based curricular offerings and principle-centered culture that define the way of life in the university.</p>
+    <h1 class="display-4">VISION</h1>
+    <p class="lead">University of Eastern Pangasinan is the best holistic higher education institution known to cultivate excellent and virtuous individuals to become catalyst of progress and development for both the local and the global communities.</p>
+   
+  </div>
+</div>
+
+<footer class="bg-dark text-light text-center py-4">
+  <p>&copy; 2024 University of Eastern Pangasinan. All rights reserved.</p>
+</footer>
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

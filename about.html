@@ -4,89 +4,70 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>About Us - University of Eastern Pangasinan</title>
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-  <link rel="stylesheet" href="styles.css"> 
-  
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
   <style>
     body {
       background-color: red;
       color: white;
     }
-
-    .navbar {
-      background-color: red;
+    .bg-dark-red {
+      background-color: darkred;
     }
-
-    .jumbotron {
-      background-color: red;
+    .navbar-brand, .navbar-nav .nav-link {
+      color: darkred !important;
     }
-
-    .footer {
-      background-color: red;
-    }
-
-    .btn-primary {
+    .navbar-light .navbar-toggler-icon {
       background-color: white;
-      color: red;
     }
   </style>
-
-  <script>
-    // Redirect function
-    function redirectToPage(page) {
-      window.location.href = page; // Redirects to the specified page
-    }
-  </script>
 </head>
 <body>
+  
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <a class="navbar-brand" href="#">University of Eastern Pangasinan</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item active">
+            <a class="nav-link" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="about.html">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="courses.html">Courses</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contact.html">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
 
-<nav class="navbar navbar-expand-lg navbar-dark bg-primary">
-  <div class="container">
-    <a class="navbar-brand" href="#">University of Eastern Pangasinan</a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarNav">
-      <ul class="navbar-nav ml-auto">
-        <li class="nav-item">
-          <a class="nav-link" href="#" onclick="redirectToPage('index.html')">Home</a>
-        </li>
-        <li class="nav-item active">
-          <a class="nav-link" href="#" onclick="redirectToPage('about.html')">About</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#" onclick="redirectToPage('courses.html')">Courses</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#" onclick="redirectToPage('contact.html')">Contact</a>
-        </li>
-      </ul>
-    </div>
-  </div>
-</nav>
+  <main>
+    <section class="container mt-5">
+      <h1>About us</h1>
+      <h5><b>OVERVIEW</b></h5> 
+      <p><i>The University of Eastern Pangasinan is the first institution of higher education in the town of Binalonan and the second one in Pangasinan to adopt a public-private partnership wherein the government assumes substantial financial grants and private entities take on the operations of the university. The establishment of UEP began in 2005 following a dissertation paper authored by its founding president, Dr. Ramon V. Guico III, structured around the idea of creating a world-class institution that will provide the best practices in education to students regardless of their social, cultural and financial background.</i></p>
 
-<div class="container mt-5">
-  <div class="jumbotron">
-    <h1 class="display-4">About Us</h1>
-   <p> Is the first institution of higher education in the town of Binalonan and the second one in Pangasinan to adopt a public-private partnership wherein the government assumes substantial financial grants and private entities take on the operations of the university. The establishment of UEP began in 2005 following a dissertation paper authored by its founding president, Dr. Ramon V. Guico III, structured around the idea of creating a world-class institution that will provide the best practices in education to students regardless of their social, cultural and financial background.</p>
-<br>
-<p> From its modest beginnings in an obscure building located in the old public market, UEP has emerged into a modern architectural display along MacArthur Highway in barangay Canarvacanan set against Binalonan’s pastoral backdrop. The first of three towers was inaugurated in July 2012 and houses the university’s academic departments including Criminology, Hospitality and Management, Business Administration, Elementary and Secondary Education, Midwifery and Information Technology. The building, which can accommodate 3,000 students, is also occupied by 36 classrooms, the administrative office, a library and demo laboratories where course-related activities and practical applications are conducted. </p>
-<br>
-<p> Envisioned to be a center of learning in Pangasinan, the campus community promotes diversity among its students and ensures that each one is given the opportunity to explore his interests, take part in extracurricular activities, nurture relationships and achieve personal growth. UEP also distinguishes itself for creating a culture of learning through a well-designed campus that integrates modern conveniences with the natural beauty of its surroundings. Aside from the main building, a garden plaza and food court are already in the final stages of completion. Once the master plan has been fully implemented, UEP will have various facilities for learning and recreation including more classrooms, a gymnasium, basketball court and tennis court. </p>
-<br>
-<p> In 2011, UEP presented its first batch of graduates with degrees in BS Information Technology (6), BS Business Administration (3), BS Hospitality and Management (1) and diplomas in Midwifery (6). In the succeeding year, the University has more than doubled its graduates and continues to attract enrollees from Binalonan and neighboring towns in Pangasinan with its affordable but quality education and a faculty who are all experts in their respective fields. </p>
+      <p><i>From its modest beginnings in an obscure building located in the old public market, UEP has emerged into a modern architectural display along MacArthur Highway in barangay Canarvacanan set against Binalonan’s pastoral backdrop. The first of three towers was inaugurated in July 2012 and houses the university’s academic departments including Criminology, Hospitality and Management, Business Administration, Elementary and Secondary Education, Midwifery and Information Technology. The building, which can accommodate 3,000 students, is also occupied by 36 classrooms, the administrative office, a library and demo laboratories where course-related activities and practical applications are conducted.</i></p>
 
+      <p><i>Envisioned to be a center of learning in Pangasinan, the campus community promotes diversity among its students and ensures that each one is given the opportunity to explore his interests, take part in extracurricular activities, nurture relationships and achieve personal growth. UEP also distinguishes itself for creating a culture of learning through a well-designed campus that integrates modern conveniences with the natural beauty of its surroundings. Aside from the main building, a garden plaza and food court are already in the final stages of completion. Once the master plan has been fully implemented, UEP will have various facilities for learning and recreation including more classrooms, a gymnasium, basketball court and tennis court.</i></p>
 
-   
-  </div>
-</div>
+      <p><i>In 2011, UEP presented its first batch of graduates with degrees in BS Information Technology (6), BS Business Administration (3), BS Hospitality and Management (1) and diplomas in Midwifery (6). In the succeeding year, the University has more than doubled its graduates and continues to attract enrollees from Binalonan and neighboring towns in Pangasinan with its affordable but quality education and a faculty who are all experts in their respective fields.</i></p>
+    </section>
+  </main>
 
-<footer class="bg-dark text-light text-center py-4">
-  <p>&copy; 2024 University of Eastern Pangasinan. All rights reserved.</p>
-</footer>
+  <footer class="bg-dark-red text-white text-center py-3">
+    <p>&copy; 2021 School Name. All rights reserved.</p>
+  </footer>
 
-<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
 </html>

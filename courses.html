@@ -4,62 +4,91 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Courses - University of Eastern Pangasinan</title>
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-  <link rel="stylesheet" href="styles.css"> 
-  
-  <script>
-    // Redirect function
-    function redirectToPage(page) {
-      window.location.href = page; // Redirects to the specified page
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <style>
+    body {
+      background-color: red;
+      color: white;
     }
-  </script>
+    .bg-dark-red {
+      background-color: darkred;
+    }
+    .navbar-brand, .navbar-nav .nav-link {
+      color: darkred !important;
+    }
+    .navbar-light .navbar-toggler-icon {
+      background-color: white;
+    }
+  </style>
+
 </head>
 <body>
+  
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <a class="navbar-brand" href="index.html">University of Eastern Pangasinan</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="about.html">About</a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="courses.html">Courses</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contact.html">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
 
-<nav class="navbar navbar-expand-lg navbar-dark bg-primary">
-  <div class="container">
-    <a class="navbar-brand" href="#">University of Eastern Pangasinan</a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarNav">
-      <ul class="navbar-nav ml-auto">
-        <li class="nav-item">
-          <a class="nav-link" href="#" onclick="redirectToPage('index.html')">Home</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#" onclick="redirectToPage('about.html')">About</a>
-        </li>
-        <li class="nav-item active">
-          <a class="nav-link" href="#" onclick="redirectToPage('courses.html')">Courses</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#" onclick="redirectToPage('contact.html')">Contact</a>
-        </li>
-      </ul>
+<main>
+  <div class="container my-5">
+    <h1><b>Courses Offered</b></h1>
+    <div class="course">
+      <h5><b>Business Administration</b></h5>
+      <p><i>This course focuses on principles of management, finance, marketing, and other aspects of business administration.</i></p>
+    </div>
+    <div class="course">
+      <h5><b>Education</b></h5>
+      <p><i>This course covers theories and practices in education, including teaching methodologies and educational psychology.</i></p>
+    </div>
+    <div class="course">
+      <h5><b>Hospitality Management</b></h5>
+      <p><i>This course focuses on managing hotels, restaurants, and other hospitality establishments, covering areas such as customer service, operations, and marketing.</i></p>
+    </div>
+    <div class="course">
+      <h5><b>Information Technology</b></h5>
+      <p><i>This course covers various aspects of IT, including networking, database management, cybersecurity, and software development.</i></p>
+    </div>
+    <div class="course">
+      <h5><b>Midwifery</b></h5>
+      <p><i>This course focuses on the care of pregnant women, childbirth, and postpartum care, as well as newborn care and family planning.</i></p>
+    </div>
+    <div class="course">
+      <h5><b>Accountancy</b></h5>
+      <p><i>This course covers principles of accounting, financial reporting, auditing, and taxation, preparing students for careers as accountants.</i></p>
+    </div>
+    <div class="course">
+      <h5><b>Accounting Information System</b></h5>
+      <p><i>This course focuses on the design, implementation, and management of accounting information systems, integrating accounting principles with information technology.</i></p>
     </div>
   </div>
-</nav>
+</main>
 
-<div class="container mt-5">
-  <div class="jumbotron">
-    <a class="btn btn-primary btn-lg" href="https://uepbinalonan.edu.ph/courses/education" role="button" style="background-color: red;"><i>Education</i></a><br>
-    <a class="btn btn-primary btn-lg" href="https://uepbinalonan.edu.ph/courses/hospitality_management" role="button" style="background-color: red;"><i>Hospitality Management</i></a><br>
-    <a class="btn btn-primary btn-lg" href="https://uepbinalonan.edu.ph/courses/criminology" role="button" style="background-color: red;"><i>Criminology</i></a><br>
-    <a class="btn btn-primary btn-lg" href="https://uepbinalonan.edu.ph/courses/business_administration" role="button" style="background-color: red;"><i>Business Administration</i></a><br>
-    <a class="btn btn-primary btn-lg" href="https://uepbinalonan.edu.ph/courses/information_technology" role="button" style="background-color: red;"><i>Information Technology</i></a><br>
-    <a class="btn btn-primary btn-lg" href="https://uepbinalonan.edu.ph/courses/midwifery" role="button" style="background-color: red;"><i>Midwifery</i></a><br>
-    <a class="btn btn-primary btn-lg" href="https://uepbinalonan.edu.ph/courses/accountancy" role="button" style="background-color: red;"><i>Accountancy</i></a><br>
-    <a class="btn btn-primary btn-lg" href="https://uepbinalonan.edu.ph/courses/ais" role="button" style="background-color: red;"><i>Accounting Information System</i></a><br>
-  </div>
-</div>
+  <footer class="bg-dark-red text-white text-center py-3">
+    <p>&copy; 2024 University of Eastern Pangasinan. All rights reserved.</p>
+  </footer>
 
-<footer class="bg-dark text-light text-center py-4">
-  <p>&copy; 2024 University of Eastern Pangasinan. All rights reserved.</p>
-</footer>
-
-<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
 </html>

@@ -4,64 +4,87 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Contact Us - University of Eastern Pangasinan</title>
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
   <style>
     body {
-      background-color: red; /* Change background color to red */
-      color: black; /* Change font color to black */
+      background-color: red;
+      color: white;
+    }
+    .bg-dark-red {
+      background-color: darkred;
+    }
+    .navbar-brand, .navbar-nav .nav-link {
+      color: darkred !important;
+    }
+    .navbar-light .navbar-toggler-icon {
+      background-color: white;
+    }
+    .container {
+      padding: 50px 20px;
     }
   </style>
-
-  <script>
-    // Redirect function
-    function redirectToPage(page) {
-      window.location.href = page; // Redirects to the specified page
-    }
-  </script>
 </head>
 <body>
+  
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <a class="navbar-brand" href="index.html">University of Eastern Pangasinan</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="about.html">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="courses.html">Courses</a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="contact.html">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
 
-<nav class="navbar navbar-expand-lg navbar-dark bg-primary">
-  <div class="container">
-    <a class="navbar-brand" href="#">University of Eastern Pangasinan</a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarNav">
-      <ul class="navbar-nav ml-auto">
-        <li class="nav-item">
-          <a class="nav-link" href="#" onclick="redirectToPage('index.html')">Home</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#" onclick="redirectToPage('about.html')">About</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#" onclick="redirectToPage('courses.html')">Courses</a>
-        </li>
-        <li class="nav-item active">
-          <a class="nav-link" href="#" onclick="redirectToPage('contact.html')">Contact</a>
-        </li>
+  <main>
+    <div class="container">
+      <h1>Contact Us</h1>
+      <p>If you have any questions or inquiries, please feel free to contact us using the information below:</p>
+      <ul>
+        <li>Email: registrar_uep@yahoo.com</li>
+        <li>Phone: (075) 562 5874</li>
+        <li>Address: Canarvacanan 2436 Binalonan, Philippines</li>
       </ul>
+      <p>You can also fill out the form below:</p>
+      <form>
+        <div class="form-group">
+          <label for="name">Name:</label>
+          <input type="text" class="form-control" id="name">
+        </div>
+        <div class="form-group">
+          <label for="email">Email:</label>
+          <input type="email" class="form-control" id="email">
+        </div>
+        <div class="form-group">
+          <label for="message">Message:</label>
+          <textarea class="form-control" id="message" rows="5"></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+      </form>
     </div>
-  </div>
-</nav>
+  </main>
 
-<div class="container mt-5">
-  <div class="jumbotron">
-    <h1 class="display-4">Contact Us</h1>
-    <p class="lead">Canarvacanan 2436 Binalonan, Philippines</p>
-    <p>(075) 562 5874</p>
-    <a class="btn btn-primary btn-lg" href="https://www.facebook.com/UEPangBinalonan" role="button">Facebook</a>
-  </div>
-</div>
+  <footer class="bg-dark-red text-white text-center py-3">
+    <p>&copy; 2024 University of Eastern Pangasinan. All rights reserved.</p>
+  </footer>
 
-<footer class="bg-dark text-light text-center py-4">
-  <p>&copy; 2024 University of Eastern Pangasinan. All rights reserved.</p>
-</footer>
-
-<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
 </html>
